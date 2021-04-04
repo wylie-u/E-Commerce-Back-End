@@ -28,6 +28,25 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
+
+  try {
+    const productData = await Product.findByPk(req.params.id, {
+      // JOIN with travellers, using the Trip through table
+      include: [{ model: Traveller, through: Trip, as: 'location_travellers' }]
+    });
+
+    if (!locationData) {
+      res.status(404).json({ message: 'No location found with this id!' });
+      return;
+    }
+
+    res.status(200).json(locationData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+
+
+
 });
 
 // create new product
