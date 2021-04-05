@@ -11,7 +11,7 @@ The user will use Insomnia Core to test the API routes for categories, products 
 
 ## Table of Contents
 
- * [Video-Walk-Through](https://www.awesomescreenshot.com/video/3237792?key=5903fc00dad25c7303c4ce951189c4db)
+ * [Video-Walk-Through](https://www.awesomescreenshot.com/video/3278412?key=d0ee923a737a4977549e4b61c7b3c8d0)
  * [Building Tools](#Building-Tools) 
  * [Installation](#Installation) 
  * [Credits](#Credits)
